@@ -2,26 +2,82 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Download do Guia de Bolso</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
       background-color: #fff8f8;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
       text-align: center;
-      padding: 60px;
     }
 
     h1 {
-      color: #444;
-      margin-bottom: 30px;
+      color: #5c2a37;
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+
+    p {
+      color: #7b3e4c;
+      font-size: 1.1em;
+      max-width: 500px;
+      margin-bottom: 40px;
+      padding: 0 20px;
     }
 
     .botao-download {
       display: inline-block;
       padding: 16px 32px;
       font-size: 18px;
-      background-color: #f48fb1;
+      background-color: #c2185b;
       color: white;
+      text-decoration: none;
+      border-radius: 12px;
+      font-weight: 600;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .botao-download:hover {
+      background-color: #ad1457;
+      transform: scale(1.03);
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.5em;
+        padding: 0 20px;
+      }
+
+      .botao-download {
+        padding: 14px 24px;
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Baixe seu Guia de Bolso 💕</h1>
+
+  <p>Este guia foi criado com carinho para te ajudar nos primeiros passos rumo a relações mais saudáveis e conscientes. Aproveite a leitura! 💗</p>
+
+  <a href="https://github.com/LucianaMansano/manualdebolsoparaprimeiroencontro/raw/main/EbookGuiadeBolso.pdf"
+     class="botao-download" download>
+    📄 Baixar PDF
+  </a>
+
+</body>
+</html>
+
       text-decoration: none;
       border-radius: 12px;
       font-weight: bold;
